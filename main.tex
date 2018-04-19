@@ -1,0 +1,122 @@
+
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Yug Khanna}
+\tagline{Aspiring Computer Engineer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{yug.khanna@uwaterloo.ca}
+%   \phone{000-00-0000}
+  \homepage{yugkhanna.github.io/}
+  \linkedin{linkedin.com/in/yug-khanna-a54163b8/}
+  \github{github.com/yugkhanna} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Software Developer Intern}{Digitalibi Interactive Solutions}{May 2018 -- August 2018}{Mumbai, IN}
+\begin{itemize}
+\item Involved in designing and developing an android app for their upcoming startup 
+\item Used API's like Google Fit and Apple HealthKit and responsible for integrating the backend of the application
+\item Involved in the development of the website of their upcoming startup
+\end{itemize}
+
+\divider
+
+\cvevent{Android Intern}{Triotech Technologies Pvt. Ltd.}{May 2017 - July 2017}{Gurgaon, IN}
+		
+\begin{itemize}
+\item Responsible for designing the frontend of the android app using \textbf{Google Material Design}
+\item Integrated backend and frontend, and also \textbf{improved sales by 20\%}
+\end{itemize}
+
+\divider
+
+\cvevent{President}{Deus Ex Machina}{March 2016 - March 2017}{Noida, IN}
+
+\begin{itemize}
+\item Trained junior students to work in a technical environment
+\item Worked with \textbf{SQL Tables and Queries} to improve data management of server.
+\item Organized various events and gave presentations on the behalf of team
+\end{itemize}
+
+\divider
+
+\cvevent{Partner}{Digitalibi Interactive Solutions}{March 2018 -- Ongoing}{Mumbai, IN - Remote}
+\begin{itemize}
+\item Helping plan out strategies for the company to expand in Canada
+\item Serving as the bridge between the company in India and their partners in Canada
+\end{itemize}
+
+\cvsection[page1sidebar]{Others}
+
+\cvevent{Speaker}{PyDelhi Community Meet}{May 26th, 2018}{Noida, IN}
+
+\begin{itemize}
+\item Gave a talk on\textbf{ "Machine Learning and Data Science in Python"} along with live presentation of my Kaggle Code \textbf{(Rank 1100/11000)}
+\end{itemize}
+
+\divider
+
+\cvevent{Nominee}{The NU Innovators Challenge}{February 2017}{Noida, IN}
+
+\begin{itemize}
+\item Developed a python program using Twilio, flat files and binary encryption which is useful for booking flight tickets
+\item Received a nomination "Top 10 Teams" in the final round with over 500 teams and 1000 participants
+\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
